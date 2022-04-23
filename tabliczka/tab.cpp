@@ -12,7 +12,7 @@ int main(){
 		for(int j=1;j<=kolumna;j++){
                 cout<<i*j<<"\t";
 		}
-		cout<<endl;	
+		cout<<"\n";	
 	}
 	return 0;
 }
