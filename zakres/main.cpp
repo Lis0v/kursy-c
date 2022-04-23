@@ -10,8 +10,10 @@ int main(){
 	cin>>kon;
 	cout<<"Podaj krok:";
 	cin>>krok;
-	for(int i=pocz;i<=kon;i+=krok){
+	int i=pocz;
+	while(i<=kon){
 		suma+=i;//suma=suma+i;
+		i+=krok;
 	}
 	cout<<"Suma liczb z przedzialu: "<<pocz<<" do "<<kon<<" wynosi: "<<suma<<endl;
 	return 0;
