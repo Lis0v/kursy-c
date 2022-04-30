@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void fun_tab(int tab[]); //deklaracja funkcji
+void fun_tab(int tab[],int rozm); //deklaracja funkcji
 
 int main(){
 
@@ -10,18 +10,16 @@ int main(){
 	cin>>rozmiar;
 	
 	int tablica[rozmiar];
-	cout<<"Uzupełniamy automatycznie tablicę: ";
+	cout<<"Uzupełniamy automatycznie tablicę.";
 	for(int i=0;i<rozmiar;i++)
 		tablica[i]=i*10;
-	fun_tab();
-
+	fun_tab(tablica,rozmiar);
 	return 0;
 }
 
 //definicja funkcji o nazwie wart_ref
-void wart_ref(int x, int &y){
-	cout<<"\nA teraz z funkcji x = "<<x<<" y = "<<y;
-	x=100*x; //x*=100
-	y=200*y; //y*=200
-	cout<<"\nPonownie w funkcji x = "<<x<<" oraz y = "<<y;
+void fun_tab(int tab[],int rozm){
+	cout<<"\nWyświetlamy w funkcji zawartość tablicy:";
+	for(int i=0;i<rozm;i++)
+		cout<<"\nElement["<<i<<"]="<<tab[i];
 }
