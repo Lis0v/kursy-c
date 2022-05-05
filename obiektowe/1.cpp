@@ -13,7 +13,8 @@ class osoba
 	{
 		cout<<"Masz lat: "<<wiek<<endl;
 	}
-};
+
+}; //koniec klasy osoba
 	
 void osoba::zapamietaj(int lata)
 {
