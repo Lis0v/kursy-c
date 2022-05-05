@@ -1,2 +1,2 @@
 # kursy
-Kursy C/C++ by Sławomir Szafraniec
+Kursy C/C++ by Sławomir Szafraniec.
