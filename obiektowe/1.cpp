@@ -6,13 +6,12 @@ int main()
 	class osoba
 	{
 		private:
-		char nazwisko[20];
 		int wiek;
 		public:
-		void zapamietaj(char *napis, int lata);
+		void zapamietaj(int lata);
 		void wypisz()
 		{
-			cout<<"Nazwisko:"<<nazwisko<<", lat:"<<wiek<<endl;
+			cout<<"Masz lat:"<<wiek<<endl;
 		}
 
 	};
