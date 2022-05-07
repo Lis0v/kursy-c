@@ -14,7 +14,8 @@ bool czy_pierwsza(int n)
 
 
 
-int main(){
+int main()
+{
 	int n;
 
 	cout<<"Podaj liczbę: ";
@@ -24,4 +25,6 @@ int main(){
 		cout<<"Liczba "<<n<<" jest pierwsza"<<endl;
 	else
 		cout<<"Liczba "<<n<<" nie jest pierwsza"<<endl;
+
+	return 0;
 }
