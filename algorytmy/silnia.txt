@@ -1,0 +1,8 @@
+silnia(5)=5*silnia(4)
+	    silnia(4)=4*silnia(3)
+		        silnia(3)=3*silnia(2)
+	         	            silnia(2)=2*silnia(1)
+				                silnia(1)=1
+
+n!=n*(n-1)!
+0!=1
