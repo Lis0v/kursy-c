@@ -43,4 +43,29 @@ wzorzec_auta::wzorzec_auta(int rok)
 }
 wzorzec_auta::wzorzec_auta(int rok,int sp)
 {
+	rocznik=rok;
+	spalanie=sp;
+	cout<<"Uruchomiony konstruktor drugi dla obiektu:"<<spalanie<<"1.Rocznik prod="<<rocznik<<endl;
+}
+wzorzec_auta::wzorzec_auta(char *opis,int rok,int sp)
+{
+	strcpy(marka,opis);
+	rocznik=rok;
+	spalanie=sp;
+	cout<<"Uruchomiony konstruktor trzeci dla obiektu:"<<spalanie<<" 1.Rocznik prod="<<rocznik<<endl;
+	cout<<"Marka:"<<marka;
+}
+void wzorzec_auta::add_auto()
+{
+	cout<<"WPROWADŹ DANE AUTA:"<<endl;
+	cout<<"Podaj markę auta: ";
+	cin>>this->marka;
+	cout<<"Podaj model auta: ";
+	cin>>this->model;
+	cout<<"Podaj rocznik auta: ";
+	cin>>this->rocznik;
+	cout<<"Podaj pojemność silnika (cm3): ";
+	cin>>this->pojemnosc;
+	cout<<"Podaj wartość przyspieszenia od 0 do 100km/h (s): ";
+	cin>>this->przyspieszenie;
 
