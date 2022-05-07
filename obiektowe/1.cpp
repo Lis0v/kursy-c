@@ -18,7 +18,7 @@ class osoba
 	
 void osoba::zapamietaj(int lata)
 {
-	wiek=lata;
+	this->wiek=lata;
 }
 
 int main()
