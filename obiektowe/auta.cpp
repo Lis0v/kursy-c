@@ -13,16 +13,17 @@ class wzorzec_auta
 		float spalanie;
 		char kolor[20];
 		int cena;
+		int nadajnik=0;
 
 	public:
-		wzorzec_auta(char *ma,char *mo,int r,float poj, float prz,float sp,char *ko,int c);
+		wzorzec_auta(char *ma,char *mo,int r,float poj, float prz,float sp,char *ko,int c,int na);
 		wzorzec_auta(int rok);
 		wzorzec_auta(int rok,int sp);
 		wzorzec_auta(char *opis,int rok, int sp);
 		void add_auto();
 		void view_auto();
 };
-wzorzec_auta::wzorzec_auta(char *ma,char *mo,int r,float poj,float prz,float sp,char *ko,int c)
+wzorzec_auta::wzorzec_auta(char *ma,char *mo,int r,float poj,float prz,float sp,char *ko,int c,int na)
 {
 	strcpy(this->marka,ma);
 	strcpy(this->model,mo);
@@ -32,9 +33,10 @@ wzorzec_auta::wzorzec_auta(char *ma,char *mo,int r,float poj,float prz,float sp,
 	spalanie=sp;
 	strcpy(kolor,ko);
 	cena=c;
-	cout<<"\nPełna zawartość: Marka:"<<marka<<"\tmodel:"<<model<<"\trocznik:"<<rocznik<<endl;
-	cout<<"Pojemność:"<<pojemnosc<<"\t przyspieszenie:"<<przyspieszenie<<"\tspalanie (1):"<<"\t"<<spalanie;
-	cout<<"Kolor:"<<kolor<<"\tcena auta:"<<cena<<".To wszystko.";
+	nadajnik=na;
+	cout<<"\n\nPełna zawartość:\nMarka: "<<marka<<"\tmodel: "<<model<<"\trocznik: "<<rocznik<<endl;
+	cout<<"Pojemność: "<<pojemnosc<<"\t przyspieszenie: "<<przyspieszenie<<"\tspalanie (l): "<<spalanie<<"\t";
+	cout<<"Kolor: "<<kolor<<"\tcena auta: "<<cena<<"\tnadajniki: "<<nadajnik<<". To wszystko.\n\n";
 }
 wzorzec_auta::wzorzec_auta(int rok)
 {
@@ -74,6 +76,8 @@ void wzorzec_auta::add_auto()
 	cin>>this->kolor;
 	cout<<"Podaj cenę samochodu: ";
 	cin>>this->cena;
+	cout<<"Podaj ile nadajników posiada samochód: "; //wlasne
+	cin>>this->nadajnik;
 }
 
 void wzorzec_auta::view_auto()
@@ -86,11 +90,12 @@ void wzorzec_auta::view_auto()
 	cout<<"Spalanie twojego auta: "<<this->spalanie<<" l"<<endl;
 	cout<<"Kolor twojego auta to:"<<this->kolor<<"."<<endl;
 	cout<<"cena auta wynosi "<<this->cena<<endl;
+	cout<<"Auto ma na sobie "<<this->nadajnik<<" nadajniki/ów"<<endl;
 }
 int main()
 {
 	wzorzec_auta auto1(1999),auto2(2000,8),auto3(2006),auto4("Fiat",2001,10);//int a=8.b;
-	wzorzec_auta auto5("BMW","X3",2000,3000,5,10,"biały",150000);
+	wzorzec_auta auto5("BMW","X3",2000,3000,5,10,"biały",150000,2);
 	/*auto1.add_auto();
 	 * auto1.view_auto();
 	 * auto2.add_auto();
