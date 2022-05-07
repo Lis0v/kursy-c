@@ -20,7 +20,7 @@ int main(){
 	cout<<"Podaj liczbę: ";
 	cin>>n;
 
-	if(czy_pierwsza(n))
+	if(czy_pierwsza(n)) //lub czy_pierwsza(n)==1
 		cout<<"Liczba "<<n<<" jest pierwsza"<<endl;
 	else
 		cout<<"Liczba "<<n<<" nie jest pierwsza"<<endl;
