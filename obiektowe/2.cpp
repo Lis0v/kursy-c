@@ -24,4 +24,23 @@ class wzorzec_auta
 };
 wzorzec_auta::wzorzec_auta(char *ma,char *mo,int r,float poj,float prz,float sp,char *ko,int c)
 {
-	strcpy(marka,ma);
+	strcpy(this->marka,ma);
+	strcpy(this->model,mo);
+	this->rocznik=r;
+	pojemnosc=poj;
+	przyspieszenie=prz;
+	spalanie=sp;
+	strcpy(kolor,ko);
+	cena=c;
+	cout<<"\nPełna zawartość: Marka:"<<marka<<"\tmodel:"<<model<<"\trocznik:"<<rocznik<<endl;
+	cout<<"Pojemność:"<<pojemnosc<<"\t przyspieszenie:"<<przyspieszenie<<"\tspalanie (1):"<<"\t"<<spalanie;
+	cout<<"Kolor:"<<kolor<<"\tcena auta:"<<cena<<".To wszystko.";
+}
+wzorzec_auta::wzorzec_auta(int rok)
+{
+	rocznik=rok;
+	cout<<"Uruchomiony konstruktor pierwszy dla obiektu:"<<rok<<endl;
+}
+wzorzec_auta::wzorzec_auta(int rok,int sp)
+{
+
