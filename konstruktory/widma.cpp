@@ -9,7 +9,8 @@ class kalibracja
 	public:
 	kalibracja(float wsp_a,float wsp_b, char *txt); //konstruktor
 
-	kalibracja(kalibracja &wzor);
+	kalibracja(kalibracja &wzor); //deklaracja konstruktora kopiującego
+
 	float energia(int kanal)
 	{
 		return ((a*kanal)+b);
