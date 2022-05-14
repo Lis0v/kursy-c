@@ -16,17 +16,7 @@ int main()
 
 	char *parametry[9]={chiffre, beruf, sort, zeit, aufgaben, alter, beginn, verdienst, kontakt};
 
-	char id[11]="ID-Chiffre";
-	char ber[6]="Beruf";
-	char sor[11]="Arbeitsort";
-	char ze[12]="Arbetszeit";
-	char auf[9]="Aufgaben";
-	char alt[6]="Alter";
-	char beg[7]="Beginn";
-	char ver[10]="Verdienst";
-	char kon[8]="Kontakt";
-
-	char *index[9]={id, ber, sor, ze, auf, alt, beg, ver, kon};
+	char *index[9]={"ID-Chiffre", "Beruf", "Arbeitsort", "Arbeitszeit", "Aufgaben", "Alter", "Beginn", "Verdienst", "Kontakt"};
 
 	for(int i=0;i<9;i++)
 	{
