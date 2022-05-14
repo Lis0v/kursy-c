@@ -37,7 +37,7 @@ int main()
 	FILE *f = fopen("Anzeige.txt", "w");
 
 	for(int j=0;j<9;j++)
-	fprintf(f, "%s: %s\n", index[j], parametry[j]);
+	fprintf(f, "%s: %s", index[j], parametry[j]);
 
 	fclose(f);
 }
