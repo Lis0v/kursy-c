@@ -1,4 +1,4 @@
-# kursy
+# kursy-python
 ## Opis
 Kursy C/C++ by Sławomir Szafraniec.    
 ## El szafrano
