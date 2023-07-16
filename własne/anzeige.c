@@ -4,15 +4,7 @@ int main()
 {
 	int *wsk;
 
-	char chiffre[10];
-	char beruf[20];
-	char sort[40];
-	char zeit[40];
-	char aufgaben[100];
-	char alter[5];
-	char beginn[20];
-	char verdienst[20];
-	char kontakt[50];
+	char chiffre[10], beruf[20], sort[40], zeit[40], aufgaben[100], alter[5], beginn[20], verdienst[20], kontakt[50];
 
 	char *parametry[9]={chiffre, beruf, sort, zeit, aufgaben, alter, beginn, verdienst, kontakt};
 
